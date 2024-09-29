@@ -2,7 +2,7 @@
 layout: page
 title: Peanut Robotics
 description: Senior Robotics Engineer
-img: assets/img/peanut/logo.jpg
+img: assets/img/peanut/logo2.jpg
 importance: 1
 category: work
 related_publications: false

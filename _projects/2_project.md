@@ -2,7 +2,7 @@
 layout: page
 title: Squishy Robotics
 description: Robotics Software Engineering Intern
-img: assets/img/squishy/squishy2.jpg
+img: assets/img/squishy/squishypic.jpg
 importance: 1
 category: work
 related_publications: false
