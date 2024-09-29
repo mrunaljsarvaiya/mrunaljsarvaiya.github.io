@@ -4,7 +4,7 @@ title: Peanut Robotics
 description: Senior Robotics Engineer
 img: assets/img/peanut/logo2.jpg
 importance: 1
-category: work
+category: work & fun
 related_publications: false
 ---
 
@@ -20,16 +20,17 @@ Peanut Robotics builds mobile manipulators for autonomous cleaning and disinfect
 </div>
 
 
-I built and integrated a number of core features for our autonomy stack
+During my 4 years at Peanut, I built and integrated a number of core features for our autonomy stack including but not limited to
 
-- Lower level velocity controllers​
-- Higher level positional trajectory controllers (ROS Control)
+- Developed the motion planning software architecture for a custom mobile manipulator
+- Selected, integrated and tuned a trajectory tracking controller and time optimal trajectory generator (TOPPRA)
+- Designed and implemented a custom navigation planner for hotel hallways that generates human-like and aesthetically pleasing motions
+- Trained a neural network model to estimate manipulator currents used to add trajectory generator torque constraints for enhanced reliability
+- Engineered tools to optimize robot paths by smoothing trajectories and reducing
+overall joint-space distance by tweaking input configurations using an optimization program
 - Communication architecture between controllers and the main on-board computer 
-- Cartesian motion planner and trajectory generator
-- Custom mobile base navigation system for hotel hallways that prioritizes human like movements​
 - Error recovery and safety features for the mobile base motors
-- Exploration algorithms ​
 - State machines for executing missions during deployment
 - RViz-based tool to record, modify and playback cartesian paths 
-- Collision checking (through MoveIt) tools used by other planners in the stack 
+- Collision checking tools (through MoveIt) used by other planners in the stack 
 

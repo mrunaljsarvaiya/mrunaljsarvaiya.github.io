@@ -2,9 +2,9 @@
 layout: page
 title: Tesla, Inc
 description: R&D Test Systems Engineering Intern
-img: assets/img/tesla/tesla_logo.png
-importance: 1
-category: work
+img: assets/img/tesla/tesla_logo2.png
+importance: 5
+category: work & fun
 related_publications: false
 ---
 

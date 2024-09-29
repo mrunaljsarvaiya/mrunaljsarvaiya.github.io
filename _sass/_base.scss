@@ -218,7 +218,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 50%;
 
     .address {
       p {
@@ -1309,6 +1309,18 @@ ninja-keys::part(ninja-input-wrapper) {
 // custom 
 .uniform-image-height {
   height: 600px; /* Set to your desired uniform height */
+  object-fit: cover; /* Ensure the aspect ratio is maintained */
+  width: 100%; /* Ensure the image fills the width of its container */
+}
+
+.uniform-image-height-small {
+  height: 400px; /* Set to your desired uniform height */
+  object-fit: cover; /* Ensure the aspect ratio is maintained */
+  width: 100%; /* Ensure the image fills the width of its container */
+}
+
+.uniform-image-height-smaller {
+  height: 300px; /* Set to your desired uniform height */
   object-fit: cover; /* Ensure the aspect ratio is maintained */
   width: 100%; /* Ensure the image fills the width of its container */
 }
