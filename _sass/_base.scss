@@ -1304,3 +1304,34 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+// custom 
+.uniform-image-height {
+  height: 600px; /* Set to your desired uniform height */
+  object-fit: cover; /* Ensure the aspect ratio is maintained */
+  width: 100%; /* Ensure the image fills the width of its container */
+}
+
+.uniform-image {
+  width: 100%; /* Fill the full width of the container */
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and avoid distortion */
+}
+
+.uniform-image-max-w {
+  width: 100%; /* Fill the full width of the container */
+  height: auto; /* Allow height to scale proportionally */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-thumbnail img {
+  width: 150px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+}
