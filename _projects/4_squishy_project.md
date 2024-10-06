@@ -19,7 +19,7 @@ related_publications: false
 
 Squishy Robotics builds rapidly deployable mobile sensing robots for disaster rescue, remote monitoring and space exploration.
 
-Over the course of my master's degree, I completed various projects as part of my capstone experience
+Over the course of my master's degree at UC Berkeley, I completed various projects as part of my capstone experience
 - Developed and integrated a path planning technique using A* and MPC for a tensegrity robot in Simulink
 - Increased range of radio communication by 200% by integrating long range radios into the robotics system 
 - Developed software that allowed interchangeable use of different frequency radios

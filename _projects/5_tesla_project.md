@@ -2,7 +2,7 @@
 layout: page
 title: Tesla, Inc
 description: R&D Test Systems Engineering Intern
-img: assets/img/tesla/tesla_logo2.png
+img: assets/img/tesla/logo.png
 importance: 5
 category: work & fun
 related_publications: false
@@ -10,11 +10,11 @@ related_publications: false
 
 
 <div class="row d-flex justify-content-center">
-    <div class="col-sm-6 mt-6 mt-md-0 d-flex justify-content-center">
-        {% include figure.liquid loading="eager" path="assets/img/tesla/tesla1.jpg" title="example image" class="img-fluid rounded z-depth-1 uniform-image-height" %}
-    </div>
     <div class="col-sm-4 mt-6 mt-md-0 d-flex justify-content-center">
         {% include figure.liquid loading="eager" path="assets/img/tesla/tesla2.png" title="example image" class="img-fluid rounded z-depth-1 uniform-image-height" %}
+    </div>
+    <div class="col-sm-8 mt-6 mt-md-0 d-flex justify-content-center">
+        {% include figure.liquid loading="eager" path="assets/img/tesla/tesla1.jpg" title="example image" class="img-fluid rounded z-depth-1 uniform-image-height" %}
     </div>
 </div>
 

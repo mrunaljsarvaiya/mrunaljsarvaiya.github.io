@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my RA at the [Ewoldt Research Group](https://ewoldt.mechanical.illinois.edu/) (**Dr. Randy Ewoldt**)
+Started my RA at the [Ewoldt Research Group](https://ewoldt.mechanical.illinois.edu/) (**Randy Ewoldt**)

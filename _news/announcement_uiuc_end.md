@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated with a BS in Mechanical Engineering with **Highest Honors** from UIUC
+Graduated with a BS in Mechanical Engineering with **Highest Honors from UIUC**

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Elected **Team President** for UIUC's [Formula SAE Team](https://motorsports.illinois.edu/) (~100 students)
+Elected **Team President** for [UIUC's Formula SAE Team](https://motorsports.illinois.edu/) (~100 students)

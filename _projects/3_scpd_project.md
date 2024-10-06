@@ -2,8 +2,8 @@
 layout: page
 title: Stanford AI Graduate Program
 description: 
-img: assets/img/stanford/logo.png
-importance: 2
+img: assets/img/stanford/logo3.png
+importance: 3
 category: work & fun
 related_publications: false
 ---

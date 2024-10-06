@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my RA at the [Advanced Controls Laboratory](https://naira.mechse.illinois.edu/) (**Dr. Naira Hovakimyan**)
+Started my RA at the [Advanced Controls Laboratory](https://naira.mechse.illinois.edu/) (**Naira Hovakimyan**)

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Moved to San Francisco and joined [Peanut Robotics](https://www.peanutrobotics.com/) (6th employee) as a robotics engineer
+Moved to San Francisco and joined [Peanut Robotics](https://www.peanutrobotics.com/) (8th employee) as a robotics engineer

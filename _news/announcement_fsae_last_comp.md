@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-2nd place as the **lead presenter** for Illini Motorsports’ sales presentation at FSAE Michigan and Lincoln. 
+**2nd place as the lead presenter** for Illini Motorsports’ sales presentation at **FSAE Michigan (80 international teams)** and Lincoln (60 teams). 

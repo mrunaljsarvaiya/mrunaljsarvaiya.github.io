@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the [Agile and Robotics Perception Lab](https://wp.nyu.edu/arpl/) at NYU (Dr. Giuseppe Loianno)
+Joined the [Agile and Robotics Perception Lab](https://wp.nyu.edu/arpl/) at NYU (**Giuseppe Loianno**)
