@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined Illini Motorsport's engine subsystem team
+Joined Illini Motorsports engine subsystem team
