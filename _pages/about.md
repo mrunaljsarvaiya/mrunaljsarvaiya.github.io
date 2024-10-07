@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Roboticist and Scientist #<a href='#'>Affiliations</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: >
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I've built [race cars](https://motorsports.illinois.edu/), developed algorithms that mobile manipulators that autonomously clean hotel bathrooms ([Peanut Robotics](https://www.peanutrobotics.com/)), and recently joined a PhD program at [NYU](https://wp.nyu.edu/arpl/) to explore the integration of Model Predictive Control and Reinforcement Learning for aerial transportation systems.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+People often ask me, "What made you pursue a PhD after developing planning and controls software for a robotics company for 4 years?" The answer is simple: my intellectual curiosity bucket wasn't satisfied. I found myself craving the satification that comes after spending days deep-diving into the technical details of a method, purely because it intrigued me. I wanted to immerse myself in a specific niche and spend the next few years filling up my curiosity bucket. That’s what led me to pursue a PhD.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+When faced with a tough decision with equally appealing options, such as pursuing a PhD or continuing in the industry, I ask myself, "In 10 years, which choice will I regret not taking?" I knew for a fact that I'd regret not doing a PhD. 
