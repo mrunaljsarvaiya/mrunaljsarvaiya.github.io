@@ -20,17 +20,15 @@ Peanut Robotics builds mobile manipulators for autonomous cleaning and disinfect
 </div>
 
 
-During my 4 years at Peanut, I built and integrated a number of core features for our autonomy stack including but not limited to
+During my 4 years at Peanut, I built and integrated a number of core features for our autonomy stack:
 
-- Developed the motion planning software architecture for a custom mobile manipulator
-- Selected, integrated and tuned a trajectory tracking controller and time optimal trajectory generator (TOPPRA)
-- Designed and implemented a custom navigation planner for hotel hallways that generates human-like and aesthetically pleasing motions
-- Trained a neural network model to estimate manipulator currents used to add trajectory generator torque constraints for enhanced reliability
-- Engineered tools to optimize robot paths by smoothing trajectories and reducing
-overall joint-space distance by tweaking input configurations using an optimization program
-- Communication architecture between controllers and the main on-board computer 
-- Error recovery and safety features for the mobile base motors
-- State machines for executing missions during deployment
-- RViz-based tool to record, modify and playback cartesian paths 
-- Collision checking tools (through MoveIt) used by other planners in the stack 
-
+- Developed the motion planning software architecture for a custom-built mobile manipulator.
+- Selected, integrated, and fine-tuned a trajectory tracking controller along with a time-optimal trajectory generator (TOPPRA).
+- Designed and implemented a custom navigation planner for hotel hallways, generating human-like and aesthetically pleasing motions.
+- Trained a neural network model to estimate manipulator currents, adding torque constraints to the trajectory generator for improved system reliability.
+- Engineered optimization tools to smooth robot paths, minimize joint-space distances, and adjust input configurations using advanced optimization techniques.
+- Developed the communication architecture between controllers and the main onboard computer, ensuring efficient data exchange.
+- Implemented error recovery mechanisms and safety features for mobile base motors to enhance operational robustness.
+- Created state machines for mission execution during deployment, streamlining task automation.
+- Designed an RViz-based tool for recording, modifying, and replaying Cartesian paths, aiding in testing and debugging.
+- Integrated collision-checking tools via MoveIt to support other planners in the robotic stack.
