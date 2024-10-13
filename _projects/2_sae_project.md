@@ -13,7 +13,7 @@ related_publications: false
     </div>
 </div>
 
-After leading projects on the engine subsystem, I developed  the skills required to efficiently manage a team and work cooperatively with a group of engineers. 
+After leading projects on the engine subsystem team, I developed  the skills required to efficiently manage a team and work cooperatively with a group of engineers. 
 
 I then transitioned to leading the administrative and external functions of the team as Team President. In this role, I organized and facilitated meetings for over 60 members, including both general sessions and leader-specific meetings. Additionally, I managed the team’s budget, overseeing the allocation of funds across six subsystems and maintaining detailed records of all transactions.
 
