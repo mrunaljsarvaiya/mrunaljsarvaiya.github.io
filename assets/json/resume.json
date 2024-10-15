@@ -158,20 +158,27 @@
       ]
     },
     {
-      "name": "Rock Climbing",
+      "name": "Planning and Controls",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Bouldering",
-        "Top Rope"
+        "Model Predictive Control",
+        "Reinforcement Learning",
+        "PID",
+        "Trajectory Generators",
+        "Trajectory Tracking Controllers"
       ]
     },
     {
-      "name": "Formula 1 Sim Racer",
+      "name": "Hobbies",
       "level": "Intermediate",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "PS5"
+        "Rock Climbing",
+        "Coffee connoisseur",
+        "Chef",
+        "Guitar",
+        "Formula 1 Sim Racer"
       ]
       
     }
@@ -191,37 +198,6 @@
       "language": "Gujarati",
       "fluency": "Fluent",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Robotics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Aerial Robots",
-        "Drones"
-      ]
-    },
-    {
-      "name": "Reinforcement Learning",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Learning value functions"
-      ]
-    },
-    {
-      "name": "Control Systems",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "NMPC"
-      ]
-    },
-    {
-      "name": "Software Architecture",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Robotics software architecture"
-      ]
     }
   ]
 }
