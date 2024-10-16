@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I have built [race cars](https://motorsports.illinois.edu/), developed algorithms for mobile manipulators that autonomously clean hotel bathrooms ([Peanut Robotics](https://www.peanutrobotics.com/)), and recently joined a PhD program at [NYU](https://wp.nyu.edu/arpl/) to explore the integration of Model Predictive Control and Reinforcement Learning for aerial transportation systems.
+I have built [race cars](https://motorsports.illinois.edu/), developed algorithms for mobile manipulators that autonomously clean hotel bathrooms at [Peanut Robotics](https://www.peanutrobotics.com/), and recently joined a PhD program at [NYU](https://wp.nyu.edu/arpl/) to explore the integration of Model Predictive Control and Reinforcement Learning for aerial transportation systems.
 
 People often ask me, "What made you pursue a PhD after developing planning and controls software for a robotics company for 4 years?" My intellectual curiosity bucket simply wasn't satisfied. I found myself craving the fulfillment I experience when I dive deep into a specific topic purely because it intrigued me. I wanted to immerse myself in a specific niche and spend the next few years filling up my curiosity bucket. That’s what led me to pursue a PhD.
 
