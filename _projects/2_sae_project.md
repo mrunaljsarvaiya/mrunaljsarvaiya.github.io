@@ -2,7 +2,7 @@
 layout: page
 title: Formula SAE
 description: Team President, Lead Business Team Presenter, Engine Simulations Lead
-img: assets/img/fsae/logo.png
+img: assets/img/fsae/logo_gif.gif
 importance: 2
 category: work & fun
 related_publications: false

@@ -2,7 +2,7 @@
 layout: page
 title: UR3 Manipulator
 description: Course Project
-img: assets/img/ugcourses/ur3_logo.png
+img: assets/img/ugcourses/logo_gif.gif
 importance: 8
 category: work & fun
 related_publications: false
