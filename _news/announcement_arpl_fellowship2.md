@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded a Ernst Weber Fellowship fellowship from the ECE department at NYU
+Awarded the Ernst Weber Fellowship fellowship from the ECE department at NYU

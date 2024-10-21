@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded a SoE PhD fellowship from the ECE department at NYU
+Awarded the SoE PhD fellowship from the ECE department at NYU

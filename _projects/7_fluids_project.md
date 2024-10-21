@@ -2,7 +2,7 @@
 layout: page
 title: Ewoldt Research Group
 description: Research Assistant
-img: assets/img/fluids/logo.png
+img: assets/img/fluids/logo_gif.gif
 importance: 7
 category: work & fun
 ---
