@@ -164,8 +164,8 @@
       "keywords": [
         "Model Predictive Control",
         "Reinforcement Learning",
-        "PID",
-        "Trajectory Generators",
+        "Classical Control Techniques",
+        "Trajectory Generation",
         "Trajectory Tracking Controllers"
       ]
     },

@@ -5,6 +5,7 @@ description: Hybrid Perception-Aware Nonlinear Model Predictive Control for Quad
 img: assets/img/hpa-mpc/logo_gif.gif
 importance: 0
 category: publications
+redirect: https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/
 related_publications: false
 ---
 

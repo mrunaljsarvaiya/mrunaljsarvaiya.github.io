@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Submitted my first paper to RAL! Stay tuned for updates
+My first [research paper](https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/) has been accepted to RA-L! 

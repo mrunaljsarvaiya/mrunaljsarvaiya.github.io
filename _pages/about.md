@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Roboticist and Scientist #<a href='#'>Affiliations</a>
+subtitle: Robotics Scientist and Engineer #<a href='#'>Affiliations</a>
 
 profile:
   align: right
