@@ -32,3 +32,6 @@ During my 4 years at Peanut, I built and integrated a number of core features fo
 - Created state machines for mission execution during deployment, streamlining task automation.
 - Designed an RViz-based tool for recording, modifying, and replaying Cartesian paths, aiding in testing and debugging.
 - Integrated collision-checking tools via MoveIt to support other planners in the robotic stack.
+
+
+Working at Peanut during it's early growth stages (I was the 8th employee) gave me with the opportunity to develop the controls stack from the ground up and bring robots to real world settings. We deployed our robots in hotels, office spaces, university lecture halls and hospitals. Apart from leading the planning and controls algorithms and software development, I developed the technical requirements to ensure safety while operating around humans and designed strategies to autonomously recover from unexpected failure conditions and collisions. I worked with the co-founders to develop a roadmap for future autonomy features to enable the mobile manipulator to performs its tasks and navigate unstructured environments with minimal human supervision. 
