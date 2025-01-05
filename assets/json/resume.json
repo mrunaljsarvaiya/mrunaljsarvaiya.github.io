@@ -56,6 +56,13 @@
       "score": "3.89/4.0"
     }
   ],
+  "publications": [
+    {
+    "name": "HPA-MPC: Hybrid Perception-Aware Nonlinear Model Predictive Control for Quadrotors with Suspended Loads",
+    "releaseDate": "2024-11-18",
+    "url": "https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/"
+    } 
+  ],
   "work": [
     {
       "name": "Peanut Robotics",
@@ -138,10 +145,9 @@
       "title": "Dean's List",
       "date": "2018-05-01",
       "awarder": "Mechanical Engineering Dept at UIUC",
-      "summary": "Awared every semester except Spring 2018"
+      "summary": "Awarded every semester except Spring 2018"
     }
   ],
-  
   "skills": [
     {
       "name": "Programming",
