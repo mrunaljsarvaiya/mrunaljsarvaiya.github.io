@@ -1,0 +1,215 @@
+cv:
+  name: "Mrunal Sarvaiya"
+  location: "Brooklyn, New York, US"
+  email: "mrunal.s@nyu.edu"
+  website: https://mrunaljsarvaiya.github.io/
+  sections:
+    # summary:
+    #   - type: TextEntry
+    #     text: "Roboticist and Scientist specializing in motion planning, controls, and perception for robotic systems."
+
+    education:
+      - type: EducationEntry
+        institution: "New York University"
+        location: "Brooklyn, NY"
+        area: "Electrical and Computer Engineering"
+        degree: "PhD Candidate"
+        start_date: "2023-08-10"
+        highlights:
+          - "[Agile Robotics and Perception Lab](https://wp.nyu.edu/arpl/)"
+
+      - type: EducationEntry
+        institution: "University of California, Berkeley"
+        location: "Berkeley, CA"
+        area: "Control of Robotic and Autonomous Systems"
+        degree: "M.Eng"
+        start_date: "2018-08-10"
+        end_date: "2019-05-15"
+        highlights:
+          - "GPA: 3.70/4.0"
+
+      - type: EducationEntry
+        institution: "Stanford Center For Professional Development"
+        area: "AI Graduate Program"
+        degree: "Graduate Coursework"
+        start_date: "2022-01-10"
+        end_date: "2023-05-15"
+        highlights:
+          - "GPA: 3.77/4.30"
+
+      - type: EducationEntry
+        institution: "University Of Illinois At Urbana-Champaign"
+        location: "Champaign, IL"
+        area: "Mechanical Engineering with Highest Honors"
+        degree: "B.S."
+        start_date: "2014-08-10"
+        end_date: "2018-05-15"
+        highlights:
+          - "GPA: 3.89/4.0"
+
+    publications:
+      - type: PublicationEntry
+        authors:
+          - "Mrunal Sarvaiya, Guanrui Li, Giuseppe Loianno"
+        title: "HPA-MPC: Hybrid Perception-Aware Nonlinear Model Predictive Control for Quadrotors with Suspended Loads"
+        date: "2024-11-18"
+        link: "https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/"
+        url: https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/
+
+    experience:
+      - type: ExperienceEntry
+        company: "Peanut Robotics"
+        position: "Senior Robotics Software Engineer"
+        location: "San Francisco, CA"
+        start_date: "2019-08-19"
+        end_date: "2023-08-10"
+        highlights:
+          - "Developed the motion planning software architecture for a custom mobile manipulator"
+          - "Selected, integrated and tuned a trajectory tracking controller and time optimal trajectory generator (TOPPRA)"
+          - "Designed and implemented a custom navigation planner for hotel hallways that generates human-like and aesthetically pleasing motions"
+          - "Trained a neural network model to estimate manipulator currents. The model was used to add trajectory generator torque constraints for enhanced reliability"
+          - "Engineered tools to optimize robot paths by smoothing trajectories and reducing, overall joint-space distance by tweaking input configurations using an optimization program"   
+
+      - type: ExperienceEntry
+        company: "Squishy Robotics"
+        position: "Controls and Software Engineer (M.Eng. Capstone)"
+        location: "Berkeley, CA"
+        start_date: "2018-08-19"
+        end_date: "2019-05-10"
+        highlights:
+          - "Implemented and tuned a path planning technique using A-star and MPC for a Tensegrity robot"
+          - "Increased range of communication by 200% by integrating long range radio software"
+          - "Developed software that allowed interchangeable use of different frequency radios"
+      - type: ExperienceEntry
+        company: "Tesla, Inc"
+        position: "R&D Test Systems Engineering Intern"
+        location: "Palo Alto, CA"
+        start_date: "2018-05-19"
+        end_date: "2018-08-10"
+        highlights:
+          - "Created a Python program that automated data logging and was deployed on over 20 workstations replacing hardware worth over $5,000 per dynamometer workstation"
+          - "Increased data accessibility and reduced post processing time by uploading data to a company-wide server which is accessed by a Jenkins pipeline"
+          - "Reduced complexity of non-standard test scripts by integrating python into the existing testing architecture"
+
+      - type: ExperienceEntry
+        company: "Illini Motorsports (Formula SAE)"
+        position: "Team President and Business Team Lead Presenter"
+        location: "Champaign, IL"
+        start_date: "2015-08-19"
+        end_date: "2018-05-01"
+        highlights:
+          - "Managed and allocated a $30,000+ budget for 6 subsystems for a team of 80 students"
+          - "Raised funds by building relationships with 10 corporate sponsors and represented the team at major university outreach events"
+          - "Secured four top 3 finishes as the business team presenter at international university competitions"
+          - "Optimized vehicle intake geometry using GT-Power simulations, increasing engine power output by 2 HP"
+          - "Led a team of 6 students to design and validate a new vehicle radiator and fan"
+
+      - type: ExperienceEntry
+        company: "Advanced Controls Research Laboratory (Dr. Naira Hovakimyan)"
+        position: "Research Assistant"
+        location: "Champaign, IL"
+        start_date: "2017-05-19"
+        end_date: "2018-03-10"
+        highlights:
+          - "Developed a genetic algorithm in Matlab to find the best path for multiple drones given time, velocity, acceleration and space constraints"
+          - "Programmed an on-board controller for the motor that increased precision of the manipulator arm by 40% and increased range of motion by 100%"
+          - "Reduced complexity of non-standard test scripts by integrating python into the existing testing architecture"
+
+    awards:
+      - type: ExperienceEntry
+        company: "Formula SAE at UIUC"
+        position: "Top 3 in the Business and Sales Presentation event"
+        location: "Champaign, IL"
+        date: "2018-05-20"
+        highlights: 
+          - "FSAE Michigan 2016, 2017, 2018 and FSAE Lincoln 2016, 2017, 2018"
+
+      - type: ExperienceEntry
+        company: "Mechanical Engineering Dept at UIUC"
+        position: "GM/Philip W. Leistra Jr. Society of Automotive Engineers Award"
+        location: "Champaign, IL"
+        date: "2018-03-01"
+        highlights: 
+          - "Recognized for contributions to the Formula SAE team"
+
+      - type: ExperienceEntry
+        company: "Mechanical Engineering Dept at UIUC"
+        position: "Dean's List"
+        location: "Champaign, IL"
+        date: "2018-05-01"
+        highlights:
+          - "Awarded every semester except Spring 2018"
+  
+design:
+  theme: sb2nov
+  font: Latin Modern Serif
+  font_size: 10pt
+  page_size: letterpaper
+  color: '#004f90'
+  disable_external_link_icons: false
+  disable_page_numbering: false
+  disable_last_updated_date: false
+  header_font_size: 24 pt
+  text_alignment: justified
+  separator_between_connections: ''
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 1.5 cm
+      bottom: 1.5 cm
+      left: 1.5 cm
+      right: 1.5 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
+locale_catalog:
+  phone_number_format: national
+  page_numbering_style: "" #NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_style: "" #Last updated in TODAY
+  date_style: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  bold_keywords: []
