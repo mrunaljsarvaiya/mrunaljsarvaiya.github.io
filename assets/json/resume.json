@@ -17,7 +17,7 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "mruanaljsarvaiya",
+        "username": "mrunaljsarvaiya",
         "url": "https://www.linkedin.com/in/mrunaljsarvaiya/"
       }
     ]
@@ -61,6 +61,11 @@
     "name": "HPA-MPC: Hybrid Perception-Aware Nonlinear Model Predictive Control for Quadrotors with Suspended Loads",
     "releaseDate": "2024-11-18",
     "url": "https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/"
+    },
+    {
+    "name": "Optimal Trajectory Planning for Cooperative Manipulation with Multiple Quadrotors Using Control Barrier Functions",
+    "releaseDate": "2023-03-03",
+    "url": "https://arxiv.org/pdf/2503.01096"
     } 
   ],
   "work": [
