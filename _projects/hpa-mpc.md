@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HPA-MPC
-description: Hybrid Perception-Aware Nonlinear Model Predictive Control for Quadrotors with Suspended Loads
+description: Hybrid Perception-Aware Nonlinear Model Predictive Control for Quadrotors with Suspended Loads (RA-L 2024)
 img: assets/img/hpa-mpc/logo_gif.gif
 importance: 0
 category: publications
