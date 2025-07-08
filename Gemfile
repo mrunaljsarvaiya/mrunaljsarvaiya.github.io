@@ -28,5 +28,5 @@ group :other_plugins do
     gem 'httparty'
 end
 
-gem 'logger'
-gem 'observer'
+# gem 'logger'
+# gem 'observer'
