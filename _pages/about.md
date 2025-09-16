@@ -34,3 +34,8 @@ $$
 I have developed a context-dependent ($$c$$) skillset ($$S$$) that sets me apart from the average roboticist and researcher. My research capabilities ($$R$$) facilitate my ability me to dive deep into algorithm details, critically question the validity of proposed methods and persistently solve hard problems. Meanwhile, my engineering expertise ($$E$$) allows me to intuitively understand real world requirements and limitations, forsee failures and systematically account for these considerations during system development.
 
 In the controlled environment of an R&D lab or startup, a robot success rate of 90% may suffice. To enable robots to operator in the **messy, unpredictable real world**, we need **99.99%**. I've optimized $$\theta$$ so that I can seamlessly transition to play the role of a research scientist, a robotics engineer and everything in between. I aspire to lead teams to close the remaining 9.99% gap and drive integration of reliable robots into our everyday lives.
+
+<br>
+#### What is my research about? 
+<br>
+I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to generating an expert dataset by developing an optimization-based trajectory generator that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using this expert data to develop policies that map onboard depth sensing to robot trajectories.
