@@ -38,4 +38,4 @@ In the controlled environment of an R&D lab or startup, a robot success rate of 
 <br>
 #### What is my research about? 
 <br>
-I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to generating an expert dataset by developing an optimization-based trajectory generator that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using this expert data to develop policies that map onboard depth sensing to robot trajectories.
+I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to building a high quality expert dataset by developing an algorithm that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using this data to develop policies that map onboard depth information to robot trajectories.
