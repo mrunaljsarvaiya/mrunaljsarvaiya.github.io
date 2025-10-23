@@ -38,4 +38,4 @@ In the controlled environment of an R&D lab or startup, a robot success rate of 
 <br>
 #### What is my research about? 
 <br>
-I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to building a robust nonlinear model predictive control (NMPC) framework and an algorithm that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using these expert methods to generate data and develop policies that map onboard depth information to robot trajectories.
+I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to building a robust nonlinear model predictive control framework and an algorithm that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using these expert methods to generate data and develop policies that map onboard depth information to robot trajectories.
