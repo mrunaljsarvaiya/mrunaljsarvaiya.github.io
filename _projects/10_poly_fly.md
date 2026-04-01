@@ -1,12 +1,12 @@
 ---
 layout: page
 title: PolyFly
-description: Polytopic Optimal Planning for Collision-Free Cable-Suspended Aerial Payload Transportation (RA-L, In Review)
+description: Polytopic Optimal Planning for Collision-Free Cable-Suspended Aerial Payload Transportation (RA-L 2025)
 
 img: assets/img/polyfly/logo.gif
 importance: 0
 category: publications
-# redirect: https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/
+redirect: https://mrunaljsarvaiya.github.io/polyfly.github.io/
 related_publications: false
 ---
 
