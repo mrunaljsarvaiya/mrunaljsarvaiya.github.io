@@ -26,16 +26,17 @@ When faced with a decision with equally appealing options, such as starting a Ph
 
 <br>
 #### What Do I Bring to the Table? 
-<br>
+<!-- <br> -->
 $$ 
 S = f_{\theta}(E, R, c)
 $$
 
-I have developed a context-dependent ($$c$$) skillset ($$S$$) that sets me apart from the average roboticist and researcher. My research capabilities ($$R$$) facilitate my ability me to dive deep into algorithm details, critically question the validity of proposed methods and persistently solve hard problems. Meanwhile, my engineering expertise ($$E$$) allows me to intuitively understand real world requirements and limitations, forsee failures and systematically account for these considerations during system development.
+I have developed a context-dependent ($$c$$) skillset ($$S$$) that sets me apart from the average roboticist and researcher. My research capabilities ($$R$$) facilitate my ability me to dive deep into algorithm details, critically question the validity of proposed methods and persistently solve hard problems. Meanwhile, my engineering expertise ($$E$$) allows me to intuitively understand real world requirements and limitations, forsee failures, and systematically account for these considerations during system development.
 
-In the controlled environment of an R&D lab or startup, a robot success rate of 90% may suffice. To enable robots to operator in the **messy, unpredictable real world**, we need **99.99%**. I've optimized $$\theta$$ so that I can seamlessly transition to play the role of a research scientist, a robotics engineer and everything in between. I aspire to lead teams to close the remaining 9.99% gap and drive integration of reliable robots into our everyday lives.
+In the controlled environment of an R&D lab or startup, a robot success rate of 90% may suffice. To enable robots to operate in the **messy, unpredictable real world**, we need **99.99%**. I've optimized $$\theta$$ so that I can seamlessly transition to play the role of a research scientist, a robotics engineer and everything in between. I aspire to lead teams to close the remaining 9.99% gap and drive integration of reliable robots into our everyday lives.
 
 <br>
 #### What is my research about? 
-<br>
-I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to building a robust nonlinear model predictive control framework and an algorithm that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using these expert methods to generate data and develop policies that map onboard depth information to robot trajectories.
+<!-- <br> -->
+<!-- I'm interested in developing deep learning methods to enable agile navigation in unstructured environments for aerial systems. My first two years were dedicated to building a robust nonlinear model predictive control framework and an algorithm that produces time-optimal trajectories in cluttered scenarios. The rest of my time will focus on using these expert methods to generate data and develop policies that map onboard depth information to robot trajectories. -->
+My research focuses on developing intelligent robots capable of operating autonomously in complex, unstructured environments. I'm interested in combining vision-language models with reinforcement learning to enable heterogeneous teams of robots to collaboratively transport objects. All of my papers include real-world experiments, because what good is robotics if it doesn't work in the wild?
