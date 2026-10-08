@@ -8,7 +8,7 @@
     <header class="rj-heading">
       <div class="rj-eyebrow">MRUNAL SARVAIYA / ROBOTICS ENGINEER &amp; RESEARCHER</div>
       <h1>From Hardware<br>to <span>Autonomy.</span></h1>
-      <p>From Research to Real-World Robotics</p>
+      <p>Research<svg class="rj-arrow" viewBox="0 0 40 12" aria-hidden="true" focusable="false"><path d="M2 6h36M7.5 1.5 2 6l5.5 4.5M32.5 1.5 38 6l-5.5 4.5"/></svg><span class="sr-only"> to and from </span>Real-World Robotics</p>
     </header>
     <div class="rj-main">
       <div class="rj-model"><canvas aria-label="Animated mechanical model morphing through five robotics projects" role="img"></canvas></div>
@@ -35,8 +35,9 @@
 #robot-journey .rj-poster{background:transparent;color:var(--ink);padding:28px 0 20px;overflow:hidden}
 #robot-journey .rj-eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:1.35px;line-height:1.6;margin:0 92px 20px 0}
 #robot-journey h1{font-size:clamp(43.2px,8vw,74.4px);font-weight:700;letter-spacing:-2.8px;line-height:.98;margin:0}
-#robot-journey h1 span{color:#1260eb}
+#robot-journey h1 span{color:#244a73}
 #robot-journey .rj-heading>p{font-size:16.8px;color:var(--sub);margin:16px 0 0;letter-spacing:.05px}
+#robot-journey .rj-arrow{display:inline-block;width:40px;height:12px;margin:0 10px;vertical-align:0;color:#244a73;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
 #robot-journey .rj-main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(180px,1fr);gap:26px;align-items:center;min-height:270px}
 #robot-journey .rj-model{height:280px;position:relative;min-width:0}
 #robot-journey canvas{display:block;width:100%;height:100%}
@@ -56,7 +57,7 @@
 #robot-journey .rj-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:22px;font:10.8px "JetBrains Mono",monospace;letter-spacing:1px;color:var(--sub)}
 #robot-journey .rj-play{background:transparent;border:0;font:13.2px "JetBrains Mono",monospace;padding:8px 0 8px 14px;white-space:nowrap;min-height:36px;letter-spacing:0}
 #robot-journey .rj-play span{padding-left:6px}
-#robot-journey button:focus-visible{outline:2px solid #1260eb;outline-offset:5px}
+#robot-journey button:focus-visible{outline:2px solid #244a73;outline-offset:5px}
 @media(max-width:540px){#robot-journey .rj-poster{padding:20px 0 16px}#robot-journey .rj-eyebrow{font-size:10.8px;letter-spacing:.7px;margin-right:70px}#robot-journey h1{font-size:50.4px;letter-spacing:-1.8px}#robot-journey .rj-main{grid-template-columns:1fr;gap:0}#robot-journey .rj-model{height:250px;margin-top:8px}#robot-journey .rj-caption{padding:0;display:grid;grid-template-columns:1fr;gap:8px;align-items:start}#robot-journey .rj-index{grid-column:1/-1;margin-bottom:2px}#robot-journey h2{font-size:28.8px}#robot-journey .rj-context{margin:0;font-size:14.4px}#robot-journey .rj-rule{margin:8px 0 12px}#robot-journey .rj-timeline{gap:8px}#robot-journey .rj-name{font-size:13.2px;min-height:45px}#robot-journey .rj-footer{font-size:9.6px;letter-spacing:.6px}#robot-journey .rj-footer>span{max-width:220px;line-height:1.7}}
 @media(max-width:360px){#robot-journey h1{font-size:43.2px}#robot-journey .rj-name{font-size:13.2px}#robot-journey .rj-timeline{gap:6px}}
 </style>
@@ -148,6 +149,8 @@ function model(k){
  return P;
 }
 const models=Array.from({length:5},(_,i)=>model(i));
+// Blend the graphic annotation with its robot, including interrupted morphs.
+models.forEach((parts,k)=>parts.labelOpacity=k===2?1:0);
 // Fit the full geometry of every stage, including rotor tips, into one stable
 // camera frame. Morphs are convex blends, so they also remain inside this frame.
 const view=p=>[p[0]*.83+p[2]*.64,-p[0]*.25+p[2]*.325-p[1]*.95];
@@ -175,6 +178,15 @@ function draw(a,b,t){
  }
  all.sort((a,b)=>a.depth-b.depth);
  all.forEach(f=>{const pts=f.ps.map(project);ctx.beginPath();ctx.moveTo(...pts[0]);pts.slice(1).forEach(p=>ctx.lineTo(...p));ctx.closePath();ctx.fillStyle=`rgba(${f.col.map(Math.round).join(',')},${f.op})`;ctx.fill();ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.45;ctx.stroke();});
+ const labelOpacity=lerp(models[a].labelOpacity,models[b].labelOpacity,t);
+ if(labelOpacity>.01){
+  const robotPoints=models[2].filter(p=>p.opacity>0).flatMap(p=>p.pts.map(project));
+  ctx.save();ctx.globalAlpha=labelOpacity;ctx.font=`${width<240?12:13}px "JetBrains Mono",monospace`;ctx.fillStyle='#696c68';ctx.textAlign='center';ctx.textBaseline='middle';
+  const half=ctx.measureText('Tensegrity robot').width/2+12;
+  const x=Math.max(half,Math.min(width-half,project([0,1.28,0])[0]));
+  const y=Math.min(height-18,Math.max(...robotPoints.map(p=>p[1]))+22);
+  ctx.fillText('Tensegrity robot',x,y);ctx.restore();
+ }
 }
 function resize(){const r=canvas.getBoundingClientRect();width=r.width;height=r.height;dpr=Math.min(devicePixelRatio||1,2);canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);const st=stateAt(clock);draw(...st);}
 new ResizeObserver(resize).observe(canvas);
@@ -183,7 +195,7 @@ play.addEventListener('click',()=>{playing=!playing;setPlay();});
 buttons.forEach((button,i)=>button.addEventListener('click',()=>{const [a,b,t]=stateAt(clock);transition=matchMedia('(prefers-reduced-motion: reduce)').matches?null:{from:[a,b,t],to:i,elapsed:0};clock=i*duration;updateLabel(i);if(!transition)draw(i,i,0);}));
 function drawIntermediate(from,to,t){
  // Preserve the exact current geometry when a stage is selected during a morph.
- const tmp=models[5];models[5]=models[from[0]].map((A,i)=>{const B=models[from[1]][i];return{pts:A.pts.map((p,j)=>p.map((v,k)=>lerp(v,B.pts[j][k],from[2]))),color:A.color.map((v,k)=>lerp(v,B.color[k],from[2])),opacity:lerp(A.opacity,B.opacity,from[2])};});draw(5,to,t);models[5]=tmp;
+ const tmp=models[5];models[5]=models[from[0]].map((A,i)=>{const B=models[from[1]][i];return{pts:A.pts.map((p,j)=>p.map((v,k)=>lerp(v,B.pts[j][k],from[2]))),color:A.color.map((v,k)=>lerp(v,B.color[k],from[2])),opacity:lerp(A.opacity,B.opacity,from[2])};});models[5].labelOpacity=lerp(models[from[0]].labelOpacity,models[from[1]].labelOpacity,from[2]);draw(5,to,t);models[5]=tmp;
 }
 function frame(now){const delta=last?Math.min((now-last)/1000,.06):0;last=now;
  if(visible){

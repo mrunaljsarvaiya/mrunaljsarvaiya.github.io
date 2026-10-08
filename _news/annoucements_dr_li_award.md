@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I received the **2025 ECE Dr. Li Annual ECE Publication Award** at NYU
+I received the 2025 ECE Dr. Li Annual ECE Publication Award at NYU

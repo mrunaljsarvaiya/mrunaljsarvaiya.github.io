@@ -364,6 +364,11 @@ footer.fixed-bottom {
 .ed-prose {
   font-size: 16px;
 
+  // Blue text in the about section (links) is also bold, matching the timeline highlights.
+  a {
+    font-weight: 600;
+  }
+
   p {
     margin-bottom: 1.1em;
   }
@@ -454,6 +459,12 @@ footer.fixed-bottom {
 
   .ed-news-date {
     padding-top: 2px;
+  }
+
+  // Bold highlights in news items (awards, venues, roles) pick up the accent blue.
+  strong {
+    font-weight: 600;
+    color: var(--ed-electric);
   }
 
   p {
