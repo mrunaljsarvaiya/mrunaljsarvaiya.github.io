@@ -6,6 +6,7 @@ description: Polytopic Optimal Planning for Collision-Free Cable-Suspended Aeria
 img: assets/img/polyfly/logo.gif
 importance: 0
 category: publications
+featured: true
 redirect: https://mrunaljsarvaiya.github.io/polyfly.github.io/
 related_publications: false
 ---

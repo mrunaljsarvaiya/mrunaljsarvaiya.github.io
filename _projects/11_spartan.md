@@ -5,6 +5,7 @@ description: Scalable Data Generation for Vision-Based Navigation of Aerial Robo
 img: assets/img/deep_polyfly/exp.gif
 importance: -1
 category: publications
+featured: true
 # redirect: https://mrunaljsarvaiya.github.io/hpa-mpc.github.io/
 related_publications: false
 ---

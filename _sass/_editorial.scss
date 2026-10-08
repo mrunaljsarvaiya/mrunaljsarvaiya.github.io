@@ -1,0 +1,580 @@
+/*******************************************************************************
+ * Editorial layer: Swiss-inspired typography, paper palette, hairline rules.
+ * Imported last so it overrides the al-folio / Bootstrap defaults.
+ ******************************************************************************/
+
+$ed-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+$ed-display: "Inter Tight", "Inter", "Helvetica Neue", Arial, sans-serif;
+$ed-mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+:root {
+  --ed-paper: #{$paper-color};
+  --ed-ink: #{$ink-color};
+  --ed-sub: #{$sub-color};
+  --ed-rule: #{$rule-color};
+  --ed-electric: #{$electric-color};
+}
+
+// -----------------------------------------------------------------------------
+// Base typography
+// -----------------------------------------------------------------------------
+
+body {
+  font-family: $ed-sans;
+  font-size: 16px;
+  line-height: 1.65;
+  background: var(--ed-paper);
+  color: var(--ed-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ed-display;
+  font-weight: 700;
+  color: var(--ed-ink);
+}
+
+h1 {
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+h2,
+h3 {
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+h4,
+h5,
+h6 {
+  letter-spacing: -0.015em;
+}
+
+a {
+  color: var(--ed-electric);
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--ed-electric);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--ed-electric);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: rgba($electric-color, 0.15);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--ed-rule);
+}
+
+// Small uppercase monospace label: section numbers, institutions, dates, venues.
+.ed-label {
+  font-family: $ed-mono;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--ed-sub);
+}
+
+// Section heading: "01 / ABOUT" over a hairline rule.
+.ed-section {
+  margin-top: 72px;
+}
+
+.ed-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--ed-rule);
+
+  a {
+    color: var(--ed-sub);
+
+    &:hover {
+      color: var(--ed-electric);
+    }
+  }
+}
+
+.ed-accent-rule {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--ed-accent, var(--ed-electric));
+}
+
+// -----------------------------------------------------------------------------
+// Flatten Bootstrap / MDB decoration
+// -----------------------------------------------------------------------------
+
+.z-depth-1,
+.z-depth-2,
+.hoverable,
+.hoverable:hover,
+.card {
+  box-shadow: none !important;
+}
+
+.card {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+img.rounded,
+.rounded {
+  border-radius: 2px !important;
+}
+
+.caption {
+  font-family: $ed-mono;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  color: var(--ed-sub);
+  text-align: left;
+  margin-top: 8px;
+}
+
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+
+.navbar,
+.navbar.navbar-light {
+  background: rgba($paper-color, 0.94) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: none;
+  border-bottom: 1px solid var(--ed-rule);
+  opacity: 1;
+
+  .navbar-brand,
+  .navbar-brand.title {
+    font-family: $ed-mono;
+    font-size: 11px;
+    font-weight: 400 !important;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--ed-ink);
+
+    .font-weight-bold {
+      font-weight: 500 !important;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: var(--ed-electric);
+    }
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-family: $ed-mono;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--ed-sub);
+    padding: 6px 0;
+    margin-left: 24px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: var(--ed-ink);
+      text-decoration: none;
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 400;
+    color: var(--ed-ink);
+    border-bottom-color: var(--ed-electric);
+  }
+
+  .navbar-toggler .icon-bar {
+    background-color: var(--ed-ink);
+  }
+}
+
+#search-toggle,
+.navbar .nav-link i {
+  font-size: 13px;
+}
+
+// -----------------------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------------------
+
+footer.sticky-bottom,
+footer.fixed-bottom {
+  background: var(--ed-paper);
+  color: var(--ed-sub);
+  border-top: 1px solid var(--ed-rule);
+  font-family: $ed-mono;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  line-height: 1.8;
+  padding: 24px 0 40px;
+  text-align: left;
+
+  a {
+    color: var(--ed-ink);
+
+    &:hover {
+      color: var(--ed-electric);
+    }
+  }
+}
+
+.ed-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.ed-footer-tag {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+// -----------------------------------------------------------------------------
+// Page header (projects, publications, project detail, news)
+// -----------------------------------------------------------------------------
+
+.post-header {
+  margin: 40px 0 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--ed-rule);
+
+  .ed-label {
+    margin-bottom: 14px;
+  }
+
+  .post-title {
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin: 0;
+    text-transform: none;
+  }
+
+  .post-description {
+    margin: 16px 0 0;
+    max-width: 680px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ed-sub);
+  }
+}
+
+// Long-form text column on detail pages; media can still span the full width.
+.post article {
+  > p,
+  > ul,
+  > ol,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > blockquote {
+    max-width: 680px;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 40px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Homepage
+// -----------------------------------------------------------------------------
+
+.ed-about {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.ed-portrait {
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  figcaption {
+    margin-top: 12px;
+  }
+
+  .ed-portrait-name {
+    color: var(--ed-ink);
+  }
+}
+
+.ed-prose {
+  font-size: 16px;
+
+  p {
+    margin-bottom: 1.1em;
+  }
+
+  // The markdown "####" sub-questions.
+  h4 {
+    font-size: 24px;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin: 40px 0 16px;
+  }
+
+  // Remove the <br> spacer paragraphs used before headings in about.md.
+  p:has(> br:only-child) {
+    display: none;
+  }
+
+  // A paragraph holding only an equation becomes a framed technical block.
+  p:has(> mjx-container:only-child) {
+    margin: 8px 0 24px;
+    padding: 18px 0;
+    border-top: 1px solid var(--ed-rule);
+    border-bottom: 1px solid var(--ed-rule);
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.ed-more {
+  margin-top: 24px;
+
+  a {
+    color: var(--ed-ink);
+
+    &:hover {
+      color: var(--ed-electric);
+    }
+  }
+}
+
+.ed-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  align-items: center;
+
+  .contact-icons {
+    font-size: 26px;
+
+    a {
+      color: var(--ed-ink);
+      margin-right: 18px;
+
+      &:hover {
+        color: var(--ed-electric);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .contact-note {
+    color: var(--ed-sub);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Timeline (news)
+// -----------------------------------------------------------------------------
+
+.ed-news {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 132px minmax(0, 1fr);
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--ed-rule);
+    font-size: 15px;
+    line-height: 1.55;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .ed-news-date {
+    padding-top: 2px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Project rows
+// -----------------------------------------------------------------------------
+
+.ed-category {
+  margin-top: 64px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.ed-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: center;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--ed-rule);
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.ed-project-media {
+  display: block;
+  background: #efeee8;
+  overflow: hidden;
+
+  img,
+  picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0 !important;
+    transition: opacity 0.2s ease;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  &:hover img {
+    opacity: 0.88;
+  }
+}
+
+.ed-project-body {
+  .ed-label {
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-size: clamp(22px, 2.6vw, 28px);
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    margin: 0;
+
+    a {
+      color: var(--ed-ink);
+
+      &:hover {
+        color: var(--ed-electric);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .ed-accent-rule {
+    margin: 18px 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ed-sub);
+    margin: 0 0 18px;
+  }
+}
+
+.ed-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+
+  a {
+    color: var(--ed-ink);
+
+    &:hover {
+      color: var(--ed-electric);
+      text-decoration: none;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Responsive
+// -----------------------------------------------------------------------------
+
+@media (max-width: 767px) {
+  .ed-about {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .ed-portrait {
+    max-width: 260px;
+  }
+
+  .ed-project {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .ed-section {
+    margin-top: 56px;
+  }
+
+  .ed-news li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
