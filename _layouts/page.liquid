@@ -8,7 +8,7 @@ layout: default
   </style>
 {% endif %}
 
-<div class="post">
+<div class="post{% if page.collection == 'projects' %} ed-detail{% endif %}">
   <header class="post-header">
     {% if page.collection == 'projects' %}
       <div class="ed-label">

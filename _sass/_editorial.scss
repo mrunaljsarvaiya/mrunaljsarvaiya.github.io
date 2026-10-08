@@ -286,21 +286,40 @@ footer.fixed-bottom {
   }
 }
 
-// Long-form text column on detail pages; media can still span the full width.
-.post article {
-  > p,
-  > ul,
-  > ol,
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6,
-  > blockquote {
-    max-width: 680px;
+// Project detail pages: header, text and media share one centered reading column,
+// so paragraphs and images line up on the same edges.
+.post.ed-detail {
+  max-width: 820px;
+  margin: 0 auto;
+
+  .post-description {
+    max-width: none;
   }
 
+  article img,
+  article video,
+  article iframe {
+    max-width: 100%;
+  }
+
+  // Bootstrap image rows overhang by the -15px row margin (and some pages use
+  // non-existent col classes like col-sm-13 with no padding to cancel it).
+  // Pin rows to the text edges; keep gutters only between side-by-side columns.
+  article .row {
+    margin-left: 0;
+    margin-right: 0;
+
+    > [class*="col"]:first-child {
+      padding-left: 0;
+    }
+
+    > [class*="col"]:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.post article {
   h2,
   h3,
   h4 {
