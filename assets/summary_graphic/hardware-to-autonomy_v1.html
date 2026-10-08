@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Hardware to Autonomy — Mrunal Sarvaiya</title>
+<style>html,body{margin:0;background:#f7f6f2}body{max-width:1000px;margin:0 auto}*{box-sizing:border-box}</style></head><body>
+<!-- Self-contained prototype. Embed the robot-journey component, its scoped style, and script in your portfolio. No external libraries or assets. -->
+<div id="robot-journey" class="viz-dotted-background">
+  <section class="rj-poster" aria-label="Mrunal Sarvaiya's robotics engineering journey">
+    <header class="rj-heading">
+      <div class="rj-eyebrow">MRUNAL SARVAIYA / ROBOTICS ENGINEER &amp; RESEARCHER</div>
+      <h1>From Hardware<br>to <span>Autonomy.</span></h1>
+      <p>From Research to Real-World Robotics</p>
+    </header>
+    <div class="rj-main">
+      <div class="rj-model"><canvas aria-label="Animated mechanical model morphing through five robotics projects" role="img"></canvas></div>
+      <div class="rj-caption" aria-live="polite">
+        <div class="rj-index">01 / FSAE</div>
+        <h2>Leadership &amp;<br>Product Vision</h2>
+        <p class="rj-context">FSAE President<br>Business / Sales</p>
+        <span class="rj-rule"></span>
+      </div>
+    </div>
+    <nav class="rj-timeline" aria-label="Jump to a project">
+      <button type="button" data-stage="0" aria-pressed="true"><span class="rj-step">01</span><span class="rj-name">FSAE</span><span class="rj-track"><i></i></span></button>
+      <button type="button" data-stage="1" aria-pressed="false"><span class="rj-step">02</span><span class="rj-name">Tesla</span><span class="rj-track"><i></i></span></button>
+      <button type="button" data-stage="2" aria-pressed="false"><span class="rj-step">03</span><span class="rj-name">Berkeley MEng</span><span class="rj-track"><i></i></span></button>
+      <button type="button" data-stage="3" aria-pressed="false"><span class="rj-step">04</span><span class="rj-name">Peanut Robotics</span><span class="rj-track"><i></i></span></button>
+      <button type="button" data-stage="4" aria-pressed="false"><span class="rj-step">05</span><span class="rj-name">Berkeley PhD</span><span class="rj-track"><i></i></span></button>
+    </nav>
+    <footer class="rj-footer"><span>MECHANICS / CONTROLS / SYSTEMS / LEARNING</span><button class="rj-play" type="button" aria-label="Pause animation">Pause <span aria-hidden="true">Ⅱ</span></button></footer>
+  </section>
+</div>
+<style>
+#robot-journey{width:100%;color-scheme:light;--paper:#f7f6f2;--ink:#202424;--sub:#696c68;--line:#d5d7ce;--stage:#79ad52;background:transparent;padding:0;font-family:Arial,Helvetica,sans-serif}
+#robot-journey *{box-sizing:border-box}
+#robot-journey .rj-poster{background:var(--paper);color:var(--ink);padding:36px 38px 20px;overflow:hidden}
+#robot-journey .rj-eyebrow{font-family:monospace;font-size:10px;letter-spacing:1.35px;line-height:1.6;margin:0 92px 20px 0}
+#robot-journey h1{font-size:clamp(36px,6.7vw,62px);font-weight:700;letter-spacing:-2.8px;line-height:.98;margin:0}
+#robot-journey h1 span{color:#1260eb}
+#robot-journey .rj-heading>p{font-size:14px;color:var(--sub);margin:16px 0 0;letter-spacing:.05px}
+#robot-journey .rj-main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(180px,1fr);gap:26px;align-items:center;min-height:270px}
+#robot-journey .rj-model{height:280px;position:relative;min-width:0}
+#robot-journey canvas{display:block;width:100%;height:100%}
+#robot-journey .rj-caption{padding:18px 0 0;transition:opacity .18s,transform .18s}
+#robot-journey .rj-index{font:11px monospace;letter-spacing:1.5px;color:var(--sub);margin-bottom:15px}
+#robot-journey h2{font-size:clamp(21px,3vw,29px);line-height:1.08;letter-spacing:-.8px;margin:0;font-weight:700}
+#robot-journey .rj-context{font-size:13px;line-height:1.6;color:var(--sub);margin:16px 0 19px}
+#robot-journey .rj-rule{width:32px;height:3px;background:var(--stage);display:block}
+#robot-journey .rj-timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px;margin-top:8px}
+#robot-journey button{font-family:inherit;color:inherit;cursor:pointer}
+#robot-journey .rj-timeline button{position:relative;border:0;background:transparent;text-align:left;padding:9px 0 0;min-width:0;min-height:63px}
+#robot-journey .rj-step{font:10px monospace;color:var(--sub);display:block;margin-bottom:7px}
+#robot-journey .rj-name{font-size:11px;line-height:1.4;font-weight:500;display:block;min-height:30px;opacity:.58}
+#robot-journey .rj-timeline button[aria-pressed=true] .rj-name{opacity:1;font-weight:700}
+#robot-journey .rj-track{position:relative;display:block;background:var(--line);height:2px;margin-top:8px;width:100%}
+#robot-journey .rj-track i{position:absolute;left:0;top:0;height:2px;width:0;background:var(--stage)}
+#robot-journey .rj-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:22px;font:9px monospace;letter-spacing:1px;color:var(--sub)}
+#robot-journey .rj-play{background:transparent;border:0;font:11px monospace;padding:8px 0 8px 14px;white-space:nowrap;min-height:36px;letter-spacing:0}
+#robot-journey .rj-play span{padding-left:6px}
+#robot-journey button:focus-visible{outline:2px solid #1260eb;outline-offset:5px}
+@media(max-width:540px){#robot-journey .rj-poster{padding:27px 22px 16px}#robot-journey .rj-eyebrow{font-size:9px;letter-spacing:.7px;margin-right:70px}#robot-journey h1{font-size:42px;letter-spacing:-1.8px}#robot-journey .rj-main{grid-template-columns:1fr;gap:0}#robot-journey .rj-model{height:250px;margin-top:8px}#robot-journey .rj-caption{padding:0;display:grid;grid-template-columns:1.2fr 1fr;gap:8px 18px;align-items:start}#robot-journey .rj-index{grid-column:1/-1;margin-bottom:2px}#robot-journey h2{font-size:24px}#robot-journey .rj-context{margin:0;font-size:12px}#robot-journey .rj-rule{margin:8px 0 12px}#robot-journey .rj-timeline{gap:8px}#robot-journey .rj-name{font-size:11px;min-height:45px}#robot-journey .rj-footer{font-size:8px;letter-spacing:.6px}#robot-journey .rj-footer>span{max-width:220px;line-height:1.7}}
+@media(max-width:360px){#robot-journey h1{font-size:36px}#robot-journey .rj-poster{padding-inline:16px}#robot-journey .rj-name{font-size:11px}#robot-journey .rj-timeline{gap:6px}}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('robot-journey');
+if(!root)return;
+const canvas=root.querySelector('canvas'),ctx=canvas.getContext('2d');
+const buttons=[...root.querySelectorAll('[data-stage]')],play=root.querySelector('.rj-play');
+buttons.forEach((button,i)=>button.style.setProperty('--stage',['#79ad52','#db7774','#ab7cda','#659cd6','#e7b74b'][i]));
+const labels=[['FSAE','Leadership &<br>Product Vision','FSAE President<br>Business / Sales'],['TESLA','Robot Testing &<br>Validation','Tesla<br>Test Systems'],['BERKELEY MENG','Controls & Systems<br>Engineering','Berkeley MEng<br>Squishy Robotics'],['PEANUT ROBOTICS','Full-Stack<br>Deployment Robotics','Peanut Robotics<br>Production Systems'],['BERKELEY PHD','Planning, Perception<br>& Learning','UC Berkeley PhD<br>LLM / VLM Autonomy']];
+const colors=['#79ad52','#db7774','#ab7cda','#659cd6','#e7b74b'];
+const rgb=h=>h.match(/\w\w/g).map(v=>parseInt(v,16));
+const palette=colors.map(rgb),dark=rgb('303839'),glass=rgb('48545b'),white=rgb('dde5e8');
+const N=64,TAU=Math.PI*2,add=(a,b)=>a.map((x,i)=>x+b[i]),sub=(a,b)=>a.map((x,i)=>x-b[i]),mul=(a,s)=>a.map(x=>x*s),dot=(a,b)=>a.reduce((s,x,i)=>s+x*b[i],0),cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],unit=a=>mul(a,1/(Math.hypot(...a)||1));
+function part(a,b,r1,r2,col,box=false,opacity=1){
+ const axis=unit(sub(b,a)),u=unit(cross(axis,Math.abs(axis[2])<.9?[0,0,1]:[0,1,0])),v=cross(axis,u),pts=[];
+ for(const p of [a,b])for(let j=0;j<12;j++){
+  const t=j/12*TAU;let x=Math.cos(t),z=Math.sin(t);
+  if(box){const m=Math.max(Math.abs(x),Math.abs(z));x/=m;z/=m;}
+  pts.push(add(p,add(mul(u,x*r1),mul(v,z*r2))));
+ }
+ return{pts,color:col,opacity};
+}
+function model(k){
+ const C=palette[k],P=Array.from({length:N},()=>part([0,.65,0],[0,.651,0],.001,.001,C,false,0));
+ const rod=(i,a,b,r,c=C)=>P[i]=part(a,b,r,r,c);
+ const box=(i,p,d,c=C)=>P[i]=part([p[0],p[1]-d[1]/2,p[2]],[p[0],p[1]+d[1]/2,p[2]],d[0]/2,d[2]/2,c,true);
+ const wheel=(i,x,y,z,r,w,c=dark)=>P[i]=part([x,y,z-w/2],[x,y,z+w/2],r,r,c);
+ if(k===0||k===1){
+  const f=k===0;box(0,[0,f?.43:.57,0],[f?2.05:2.75,f?.3:.55,f?.65:1.05]);
+  box(1,[.35,f?.64:.97,0],[f?.76:1.36,f?.26:.45,f?.48:.87],f?C:glass);
+  if(!f){P[1].pts.forEach((p,j)=>{p[0]=.35+(p[0]-.35)*(j<12?1.25:.82);p[2]*=j<12?1:.87;});box(2,[.35,1.22,0],[1.12,.065,.76]);box(3,[-.96,.86,0],[.64,.08,.99]);}
+  else{box(2,[-1.28,.26,0],[.43,.11,1.59]);box(3,[1.12,1.0,0],[.4,.12,1.28]);}
+  [-1,1].forEach((s,j)=>{
+   [-.88,.92].forEach((x,l)=>{const z=s*(f?.67:.61),i=j*2+l;wheel(4+i,x,.34,z,.34,f?.31:.19);wheel(8+i,x,.34,z+s*(f?.16:.1),.21,.025,f?C:rgb('8e9491'));rod(12+i,[x,.36,0],[x,.36,z],.045,dark);});
+   if(f){box(20+j,[1.06,.69,s*.46],[.08,.52,.07]);box(22+j,[-.45,.42,s*.45],[.73,.23,.25]);}
+   else{box(20+j,[-.22,.9,s*.57],[.18,.075,.13]);box(22+j,[-1.32,.73,s*.35],[.035,.095,.26],white);box(24+j,[1.34,.7,s*.35],[.035,.085,.24],rgb('bd4d50'));}
+  });
+  if(f){box(26,[-.75,.55,0],[1.23,.22,.34]);box(27,[.6,.81,0],[.35,.2,.32],dark);}
+ }
+ if(k===2){
+  // Six compression struts suspended by a network of tension cables.
+  const a=.94,b=.39,yy=1.28;
+  const vertices=[[-a,yy-b,0],[-a,yy+b,0],[a,yy-b,0],[a,yy+b,0],[0,yy-a,-b],[0,yy-a,b],[0,yy+a,-b],[0,yy+a,b],[-b,yy,-a],[b,yy,-a],[-b,yy,a],[b,yy,a]];
+  const struts=[[0,1],[2,3],[4,5],[6,7],[8,9],[10,11]];
+  struts.forEach(([a,b],i)=>rod(i,vertices[a],vertices[b],.075));
+  vertices.forEach((p,i)=>rod(6+i,add(p,[0,-.07,0]),add(p,[0,.07,0]),.085));
+  let idx=20;
+  for(let i=0;i<12;i++)for(let j=i+1;j<12;j++){
+   const dist=Math.hypot(...sub(vertices[i],vertices[j]));
+   if(dist>1.0&&dist<1.5&&idx<N)rod(idx++,vertices[i],vertices[j],.013,rgb('9872ba'));
+  }
+ }
+ if(k===3){
+  box(0,[0,.45,0],[1.12,.45,.9],white);box(1,[.32,1.3,-.05],[.29,1.35,.39],white);box(2,[.28,1.33,-.28],[.16,1.21,.08]);box(3,[.3,2.04,-.05],[.36,.17,.42]);box(20,[.14,2.04,.17],[.21,.08,.03],dark);
+  [-1,1].forEach((s,j)=>{wheel(4+j,-.16,.31,s*.51,.31,.18);wheel(8+j,-.16,.31,s*.61,.24,.023,C);wheel(6+j,.43,.17,s*.32,.14,.09);});
+  const a=[.3,1.24,.23],b=[-.23,1.7,.28],c=[-.85,1.24,.31],d=[-.94,.97,.31];
+  rod(26,a,b,.09);rod(27,b,c,.09);rod(28,c,d,.07,white);
+  [a,b,c,d].forEach((p,j)=>wheel(12+j,p[0],p[1],p[2],.125,.16,C));
+  rod(30,add(d,[0,-.01,-.1]),add(d,[-.1,-.24,-.13]),.037);rod(31,add(d,[0,-.01,.1]),add(d,[-.1,-.24,.13]),.037);
+ }
+ if(k===4){
+  box(0,[0,.9,0],[1.38,.38,.62]);box(1,[.22,1.17,0],[.42,.13,.38]);box(2,[-.7,.9,0],[.045,.21,.42],dark);box(3,[.72,.9,0],[.045,.21,.39],dark);
+  for(let j=0;j<4;j++){
+   const x=j<2?-.52:.52,z=j%2?-.38:.38,s=j%2?-1:1;
+   const hip=[x,.91,z],knee=[x-.19,.49,z+s*.11],foot=[x+.05,.13,z+s*.18];
+   rod(12+j,hip,knee,.087);rod(16+j,knee,foot,.061);wheel(8+j,...knee,.1,.11,C);wheel(20+j,...hip,.12,.12,C);box(4+j,[foot[0],.075,foot[2]],[.22,.13,.17]);
+  }
+  const a=[.22,1.21,0],b=[.02,1.74,0],c=[-.58,1.91,0],d=[-.71,1.67,0];
+  rod(26,a,b,.075);rod(27,b,c,.07);rod(28,c,d,.047,dark);[a,b,c].forEach((p,j)=>wheel(29+j,...p,.105,.14,C));
+  rod(32,add(d,[0,0,-.065]),add(d,[-.06,-.14,-.08]),.024,dark);rod(33,add(d,[0,0,.065]),add(d,[-.06,-.14,.08]),.024,dark);
+  const center=[.5,2.67,0];box(40,center,[.36,.13,.28]);box(41,[.5,2.58,0],[.14,.13,.13]);
+  for(let j=0;j<4;j++){
+   const p=[.5+(j<2?-.43:.43),2.67,j%2?-.39:.39];rod(42+j,center,p,.027);rod(46+j,p,add(p,[0,.12,0]),.045,dark);P[50+j]=part(add(p,[0,.13,0]),add(p,[0,.142,0]),.23,.23,C);
+  }
+ }
+ return P;
+}
+const models=Array.from({length:5},(_,i)=>model(i));
+const faces=[];for(let j=0;j<12;j++)faces.push([j,(j+1)%12,(j+1)%12+12,j+12]);faces.push(Array.from({length:12},(_,i)=>11-i),Array.from({length:12},(_,i)=>i+12));
+let width=0,height=0,dpr=1,stage=0,active=-1,clock=0,last=0,playing=!matchMedia('(prefers-reduced-motion: reduce)').matches,transition=null,visible=true;
+const hold=3.2,morph=1.85,duration=hold+morph,total=duration*5+1.8;
+const ease=t=>t*t*t*(t*(t*6-15)+10),lerp=(a,b,t)=>a+(b-a)*t;
+function updateLabel(k){if(active===k)return;active=k;root.style.setProperty('--stage',colors[k]);root.querySelector('.rj-index').textContent=`0${k+1} / ${labels[k][0]}`;root.querySelector('h2').innerHTML=labels[k][1];root.querySelector('.rj-context').innerHTML=labels[k][2];buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===k)));}
+function stateAt(t){let k=Math.floor(t/duration);if(k>=5)return[4,0,ease((t-duration*5)/1.8)];let local=t-k*duration;if(k===4&&local<hold+1.8)return[4,4,0];if(k===4)return[4,4,0];return[k,k+1,ease(Math.max(0,(local-hold)/morph))];}
+function project(p){const s=Math.min(width/3.8,height/3.45);return[width*.5+s*(p[0]*.83+p[2]*.64),height*.84+s*(-p[0]*.25+p[2]*.325-p[1]*.95)];}
+function draw(a,b,t){
+ ctx.clearRect(0,0,width,height);
+ // One shared ground plane; shadows stay soft while model geometry stays crisp.
+ const center=project([0,0,0]),s=Math.min(width/3.8,height/3.45);
+ ctx.save();ctx.translate(center[0],center[1]);ctx.scale(1,.28);const shadow=ctx.createRadialGradient(0,0,0,0,0,s*1.45);shadow.addColorStop(0,'rgba(49,52,42,.13)');shadow.addColorStop(.6,'rgba(49,52,42,.055)');shadow.addColorStop(1,'rgba(49,52,42,0)');ctx.fillStyle=shadow;ctx.beginPath();ctx.ellipse(0,0,s*1.45,s*1.1,0,0,TAU);ctx.fill();ctx.restore();
+ const all=[],light=unit([-3,6,4]),camera=unit([-.608,.429,.788]);
+ for(let i=0;i<N;i++){
+  const A=models[a][i],B=models[b][i],op=lerp(A.opacity,B.opacity,t);if(op<.01)continue;
+  const pts=A.pts.map((p,j)=>p.map((v,l)=>lerp(v,B.pts[j][l],t))),col=A.color.map((c,j)=>lerp(c,B.color[j],t));
+  for(const face of faces){const ps=face.map(j=>pts[j]);const normal=unit(cross(sub(ps[1],ps[0]),sub(ps[2],ps[0])));let shade=.8+.23*dot(normal,light);const depth=ps.reduce((v,p)=>v+dot(p,camera),0)/ps.length;all.push({ps,col:col.map(c=>Math.max(0,Math.min(255,c*shade))),depth,op});}
+ }
+ all.sort((a,b)=>a.depth-b.depth);
+ all.forEach(f=>{const pts=f.ps.map(project);ctx.beginPath();ctx.moveTo(...pts[0]);pts.slice(1).forEach(p=>ctx.lineTo(...p));ctx.closePath();ctx.fillStyle=`rgba(${f.col.map(Math.round).join(',')},${f.op})`;ctx.fill();ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.45;ctx.stroke();});
+}
+function resize(){const r=canvas.getBoundingClientRect();width=r.width;height=r.height;dpr=Math.min(devicePixelRatio||1,2);canvas.width=width*dpr;canvas.height=height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);const st=stateAt(clock);draw(...st);}
+new ResizeObserver(resize).observe(canvas);
+function setPlay(){play.innerHTML=playing?'Pause <span aria-hidden="true">Ⅱ</span>':'Play <span aria-hidden="true">▶</span>';play.setAttribute('aria-label',playing?'Pause animation':'Play animation');}
+play.addEventListener('click',()=>{playing=!playing;setPlay();});
+buttons.forEach((button,i)=>button.addEventListener('click',()=>{const [a,b,t]=stateAt(clock);transition=matchMedia('(prefers-reduced-motion: reduce)').matches?null:{from:[a,b,t],to:i,elapsed:0};clock=i*duration;updateLabel(i);if(!transition)draw(i,i,0);}));
+function drawIntermediate(from,to,t){
+ // Preserve the exact current geometry when a stage is selected during a morph.
+ const tmp=models[5];models[5]=models[from[0]].map((A,i)=>{const B=models[from[1]][i];return{pts:A.pts.map((p,j)=>p.map((v,k)=>lerp(v,B.pts[j][k],from[2]))),color:A.color.map((v,k)=>lerp(v,B.color[k],from[2])),opacity:lerp(A.opacity,B.opacity,from[2])};});draw(5,to,t);models[5]=tmp;
+}
+function frame(now){const delta=last?Math.min((now-last)/1000,.06):0;last=now;
+ if(visible){
+  if(transition){transition.elapsed+=delta;drawIntermediate(transition.from,transition.to,ease(Math.min(1,transition.elapsed/1.15)));if(transition.elapsed>=1.15)transition=null;}
+  else{if(playing)clock=(clock+delta)%total;const [a,b,t]=stateAt(clock);draw(a,b,t);updateLabel(t>.58?b:a);}
+  const prog=clock/duration;buttons.forEach((button,i)=>button.querySelector('i').style.width=`${Math.max(0,Math.min(1,prog-i))*100}%`);
+ }
+ requestAnimationFrame(frame);
+}
+document.addEventListener('visibilitychange',()=>{visible=!document.hidden;last=0;});
+if('IntersectionObserver' in window)new IntersectionObserver(e=>{visible=e[0].isIntersecting&&!document.hidden;last=0;},{threshold:0}).observe(root);
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{if(e.matches){playing=false;transition=null;clock=0;updateLabel(0);setPlay();}});
+// A small local preview hook for deterministic screenshots and integration checks.
+root.robotJourney={seek:(k,t=0)=>{playing=false;transition=null;clock=k*duration+hold+t*morph;setPlay();const state=stateAt(clock);draw(...state);updateLabel(t>.58?(k+1)%5:k);},play:()=>{playing=true;setPlay();}};
+updateLabel(0);setPlay();resize();requestAnimationFrame(frame);
+})();
+</script>
+
+</body></html>
