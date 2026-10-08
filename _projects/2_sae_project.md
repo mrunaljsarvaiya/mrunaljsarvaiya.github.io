@@ -13,13 +13,13 @@ related_publications: false
     </div>
 </div>
 
-After leading projects on the engine subsystem team, I developed  the skills required to efficiently manage a team and work cooperatively with a group of engineers. 
+After leading projects on the engine subsystem team, I developed the skills required to efficiently manage a team and work cooperatively with a group of engineers. 
 
 I then transitioned to leading the administrative and external functions of the team as Team President. In this role, I organized and facilitated meetings for over 60 members, including both general sessions and leader-specific meetings. Additionally, I managed the team’s budget, overseeing the allocation of funds across six subsystems and maintaining detailed records of all transactions.
 
-As the external image of the team I developed and maintained relationships with corporate sponsors and the university. To increase public awareness about our team and the field of engineering in general, I organized and held external events such as outreach events at highschools, engineering openhouse booths and student recruiting events at the university.
+As the external image of the team, I developed and maintained relationships with corporate sponsors and the university. To increase public awareness about our team and the field of engineering in general, I organized and held external events such as outreach events at high schools, engineering open house booths and student recruiting events at the university.
 
-I succeeded in increasing student involvement from majors outside the engineering department, increasing sponsorship funding by 10% and created a new subsystem targeted towards Media and Business students.
+I succeeded in increasing student involvement from majors outside the engineering department, increasing sponsorship funding by 10%, and creating a new subsystem targeted towards Media and Business students.
 
 
 **Business and Sales Team 2016-2018**
@@ -39,7 +39,7 @@ I was one of two presenters for this event and was actively involved in creating
 </div>
 
 
-My co-presenter and I have presented at 4 competitions so far. We have done extremely well securing 2nd place in Michigan FSAE two times and 1st plce at Lincoln FSAE.
+My co-presenter and I have presented at 4 competitions so far. We have done extremely well, securing 2nd place at Michigan FSAE two times and 1st place at Lincoln FSAE.
 
 **Simulations Team Lead 2016-2017**
 <div class="row d-flex justify-content-center">

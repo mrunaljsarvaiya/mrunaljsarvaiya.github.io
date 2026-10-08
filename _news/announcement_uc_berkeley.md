@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my Masters at **UC Berkeley** in Control of Robotic and Autonomous Systems
+Started my Master's at **UC Berkeley** in Control of Robotic and Autonomous Systems

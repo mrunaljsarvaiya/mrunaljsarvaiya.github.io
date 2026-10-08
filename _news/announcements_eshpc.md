@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My follow-up work on HPA-MPC is now available on arxiv [ES-HPC-MPC](https://lfrecalde1.github.io/es-hpc-mpc.github.io/)
+My follow-up work on HPA-MPC is now available on arXiv: [ES-HPC-MPC](https://lfrecalde1.github.io/es-hpc-mpc.github.io/)

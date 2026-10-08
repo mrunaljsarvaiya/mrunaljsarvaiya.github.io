@@ -8,7 +8,7 @@ category: work & fun
 related_publications: false
 ---
 
-I enrolled into Stanford's AI Graduate Program to start my journey into utilizing AI and machine learning tools to develop intelligent control algorithms for robots. I completed to following courses
+I enrolled in Stanford's AI Graduate Program to start my journey into utilizing AI and machine learning tools to develop intelligent control algorithms for robots. I completed the following courses:
  - CS 229 : Machine Learning 
  - CS 228 : Probabilistic Graphical Models
  - CS 231N: Deep Learning for Computer Vision 

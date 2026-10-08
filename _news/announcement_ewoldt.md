@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Scored the top 5% percentile grade in my fluids mechanics class final, which secured me an interview for a RA position at the Ewoldt Research Group
+Scored in the top 5% on my fluid mechanics class final, which secured me an interview for an RA position at the Ewoldt Research Group

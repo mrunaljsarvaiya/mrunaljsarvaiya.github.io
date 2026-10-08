@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined **Tesla** as a R&D Test Systems Engineering Intern
+Joined **Tesla** as an R&D Test Systems Engineering Intern

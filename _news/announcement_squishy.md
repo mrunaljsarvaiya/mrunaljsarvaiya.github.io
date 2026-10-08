@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined [Squishy Robotics](https://squishy-robotics.com/) to work on Tensegrity robots for my capstone project (CEO **Alice Agogino**)
+Joined [Squishy Robotics](https://squishy-robotics.com/) to work on tensegrity robots for my capstone project (CEO **Alice Agogino**)
