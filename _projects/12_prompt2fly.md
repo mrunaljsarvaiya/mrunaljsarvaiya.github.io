@@ -5,6 +5,7 @@ description: Using LLMs and VLMs for Autonomous Aerial Transportation
 img: assets/img/prompt2fly/drone_pickup.gif
 importance: -2
 category: publications
+redirect: https://mrunaljsarvaiya.github.io/prompt2fly/
 featured: true
 related_publications: false
 ---
