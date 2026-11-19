@@ -2,7 +2,7 @@
 layout: page
 title: SPARTAN
 description: Scalable Data Generation for Vision-Based Navigation of Aerial Robots with Suspended Payloads
-img: assets/img/deep_polyfly/exp.gif
+img: assets/img/deep_polyfly/zoom_grid_8x8_follow.gif
 importance: -1
 category: publications
 featured: true
